@@ -1,19 +1,34 @@
-let myLeads = ["Dgdf", "xfvfbd", "fdgdf"]
-const inputBtn = document.getElementById("input-btn")
+let myLeads = []
 
 const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
+const ulEl = document.getElementById("ul-el")
 
-const ulEl = document.getElementById("ul-El")
 
-
-inputBtn.addEventListener('click', function(){
+inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
+    inputEl.value = ""
+    renderLeads()
+
 })
 
-for(let i = 0; i < myLeads.length; i++){
-    // let newLi = document.createElement("li")
-    // let text = document.createTextNode("")
-    // newLi.append(text)
-    // ulEl.append(newLi)
-    ulEl.innerHTML = "<li>" + myLeads[i] + "</li>"
+
+
+function renderLeads(){
+    // const li = document.createElement("li")
+    // li.innerHTML = "<a target = '_blank' href = https://" + myLeads[myLeads.length - 1] + ">" + myLeads[myLeads.length - 1] + "</a>"
+    // ulEl.append(li)
+
+
+    let listItems = ""
+    for(let i = 0; i < myLeads.length; i++){
+        listItems += `
+            <li>
+                <a href = "https://${myLeads[i]}.com" target = "_blank">www.${myLeads[i]}.com</a>
+            </li>
+        `
+    }
+
+    ulEl.innerHTML = listItems
+
 }

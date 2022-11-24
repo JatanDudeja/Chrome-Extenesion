@@ -8,12 +8,8 @@ input{
     border: 1px solid #5f9341;
     box-sizing: border-box;
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     margin-bottom: 4px;
-
 }
 
 button{
@@ -23,4 +19,18 @@ button{
     padding: 10px 20px;
     font-weight:bold;
     font-size: 16px;
+}
+
+
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+li{
+    margin-top: 5px;
+}
+
+li a{
+    color: #5f9341;
 }
