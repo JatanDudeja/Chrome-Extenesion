@@ -4,9 +4,7 @@
 This web extension helps to add notes while on a browser and add useful links to the list of your notes.
 
 
-## Tech Stack
 
-**FrontEnd:** HTML, CSS, JavaScript
 
 
 
